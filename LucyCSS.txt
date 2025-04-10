@@ -1,0 +1,68 @@
+/* 共通ベース */
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #506080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+}
+
+h2 {
+  color: #506080;
+  border-left: 5px solid #506080;
+  padding-left: 10px;
+}
+
+/* チャット構造 */
+.chat {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.chat.left {
+  justify-content: flex-start;
+}
+
+.chat.right {
+  justify-content: flex-end;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.bubble.speaker-left {
+  background-color: #f0f0f0;
+  color: #000;
+  border-bottom-left-radius: 0;
+}
+
+.bubble.speaker-right {
+  background-color: #506080;
+  color: #fff;
+  border-bottom-right-radius: 0;
+}
+
+/* 図表やコード表示 */
+pre.diagram {
+  background-color: #eee;
+  padding: 10px;
+  font-family: monospace;
+  overflow-x: auto;
+}
